@@ -65,7 +65,8 @@ grafana.dashboard.new('GitHub Repository Stats', uid='github-repo-stats', editab
   grafana.template.datasource(
     'datasource',
     'prometheus',
-    'Prometheus'
+    'Prometheus',
+    label='Data Source',
   )
 )
 .addTemplate(

@@ -6,7 +6,8 @@ grafana.dashboard.new('GitHub API Usage', uid='github-api-usage', editable=true)
   grafana.template.datasource(
     'datasource',
     'prometheus',
-    'Prometheus'
+    'Prometheus',
+    label='Data Source',
   )
 )
 .addPanels(
